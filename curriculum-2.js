@@ -103,6 +103,60 @@ CURRICULUM.push(
    "text": "How much للحاجات اللي مش بتتعد (سعر، ماء). How many للحاجات اللي بتتعد (طلاب، كتب)."
   },
   {
+   "type": "h",
+   "text": "أسئلة بتعتمد على to be"
+  },
+  {
+   "type": "ex",
+   "items": [
+    [
+     "What is your phone number?",
+     "رقم تليفونك إيه؟"
+    ],
+    [
+     "Who is your teacher?",
+     "مين مدرسك؟"
+    ],
+    [
+     "Where are the keys?",
+     "المفاتيح فين؟"
+    ],
+    [
+     "How old are you?",
+     "عندك كام سنة؟"
+    ]
+   ]
+  },
+  {
+   "type": "h",
+   "text": "الفرق بين الترتيبين"
+  },
+  {
+   "type": "table",
+   "head": [
+    "مع to be",
+    "مع فعل عادي"
+   ],
+   "rows": [
+    [
+     "Where is he?",
+     "Where does he live?"
+    ],
+    [
+     "What is it?",
+     "What does it mean?"
+    ],
+    [
+     "Why are you late?",
+     "Why do you study English?"
+    ]
+   ]
+  },
+  {
+   "type": "note",
+   "text": "لو الفعل عادي بنحتاج do/does. لو to be مفيش."
+  },
+  {
    "type": "note",
    "text": "بعد does بنستخدم الفعل من غير s: Where does she live؟"
   }
@@ -183,6 +237,44 @@ CURRICULUM.push(
    ],
    "answer": 0,
    "explain": "books بتتعد فبنستخدم many."
+  },
+  {
+   "q": "اختار الصح:",
+   "options": [
+    {
+     "text": "How old are you?"
+    },
+    {
+     "text": "How old do you are?"
+    },
+    {
+     "text": "How you old are?"
+    },
+    {
+     "text": "How are old you?"
+    }
+   ],
+   "answer": 0,
+   "explain": "مع to be مفيش do."
+  },
+  {
+   "q": "إيه معنى What does it mean؟",
+   "options": [
+    {
+     "text": "معناها إيه؟"
+    },
+    {
+     "text": "ده إيه؟"
+    },
+    {
+     "text": "ده فين؟"
+    },
+    {
+     "text": "مين ده؟"
+    }
+   ],
+   "answer": 0,
+   "explain": "سؤال عن معنى كلمة أو جملة."
   }
  ],
  "exercises": [
@@ -203,6 +295,12 @@ CURRICULUM.push(
    "hint": "Where و When و Why.",
    "code": "Where do you study? When do you finish? Why do you like English?",
    "why": "كل كلمة بتجيب نوع معلومة مختلف."
+  },
+  {
+   "task": "اكتب سؤال لكل إجابة: 1) It is 5 pm. 2) My name is Hana. 3) I live in Assiut.",
+   "hint": "نوع المعلومة.",
+   "code": "What time is it? What is your name? Where do you live?",
+   "why": "نوع الإجابة بيحدد كلمة السؤال."
   }
  ]
 },
@@ -304,6 +402,48 @@ CURRICULUM.push(
    ]
   },
   {
+   "type": "h",
+   "text": "حروف جر الحركة"
+  },
+  {
+   "type": "ex",
+   "items": [
+    [
+     "I go to university by bus.",
+     "بروح الجامعة بالأتوبيس"
+    ],
+    [
+     "She comes from Cairo.",
+     "هي جاية من القاهرة"
+    ],
+    [
+     "He walks into the room.",
+     "بيدخل الأوضة"
+    ],
+    [
+     "They are waiting for me.",
+     "مستنيني"
+    ]
+   ]
+  },
+  {
+   "type": "h",
+   "text": "عبارات ثابتة"
+  },
+  {
+   "type": "list",
+   "items": [
+    "at home, at work, at school",
+    "in bed, in the car, in the morning",
+    "on time, on foot, on the phone",
+    "by car, by train, by bus"
+   ]
+  },
+  {
+   "type": "note",
+   "text": "العبارات دي بتتحفظ كأنها كلمة واحدة، مفيش قاعدة تغيّرها."
+  },
+  {
    "type": "note",
    "text": "بنقول in the morning لكن at night."
   }
@@ -384,6 +524,44 @@ CURRICULUM.push(
    ],
    "answer": 0,
    "explain": "under معناها تحت."
+  },
+  {
+   "q": "كمّل: I go to work ___ bus.",
+   "options": [
+    {
+     "text": "by"
+    },
+    {
+     "text": "in"
+    },
+    {
+     "text": "at"
+    },
+    {
+     "text": "with the"
+    }
+   ],
+   "answer": 0,
+   "explain": "وسيلة المواصلات بنقولها بـ by."
+  },
+  {
+   "q": "كمّل: She is ___ the phone.",
+   "options": [
+    {
+     "text": "on"
+    },
+    {
+     "text": "in"
+    },
+    {
+     "text": "at"
+    },
+    {
+     "text": "by"
+    }
+   ],
+   "answer": 0,
+   "explain": "on the phone عبارة ثابتة."
   }
  ],
  "exercises": [
@@ -404,6 +582,12 @@ CURRICULUM.push(
    "hint": "حروف جر مكان.",
    "code": "The bag is under the desk. The lamp is next to the bed.",
    "why": "حروف الجر بتوصف العلاقة بين الأشياء."
+  },
+  {
+   "task": "كمّل: I am ___ home. I travel ___ train. He is late, he is not ___ time.",
+   "hint": "عبارات ثابتة.",
+   "code": "at home, by train, on time.",
+   "why": "العبارات الثابتة بتتحفظ."
   }
  ]
 },
@@ -513,6 +697,43 @@ CURRICULUM.push(
    "text": "كلمات الماضي: yesterday و last week و two days ago."
   },
   {
+   "type": "h",
+   "text": "قصة قصيرة بالماضي"
+  },
+  {
+   "type": "p",
+   "text": "Yesterday I woke up at seven. I had breakfast and went to university. I studied English for two hours. Then I met my friend and we ate lunch. In the evening I watched a movie and slept early."
+  },
+  {
+   "type": "h",
+   "text": "كلمات تربط الأحداث"
+  },
+  {
+   "type": "ex",
+   "items": [
+    [
+     "first",
+     "الأول"
+    ],
+    [
+     "then",
+     "بعدين"
+    ],
+    [
+     "after that",
+     "بعد كده"
+    ],
+    [
+     "finally",
+     "في الآخر"
+    ]
+   ]
+  },
+  {
+   "type": "note",
+   "text": "في القصة الماضي بيتكرر مع كل فعل. غلطة شائعة إننا نرجع للمضارع في نص الجملة."
+  },
+  {
    "type": "note",
    "text": "بعد did الفعل بيرجع لأصله: Did you go؟ مش Did you went."
   }
@@ -593,6 +814,44 @@ CURRICULUM.push(
    ],
    "answer": 0,
    "explain": "buy فعل غير منتظم، ماضيه bought."
+  },
+  {
+   "q": "الماضي لـ meet؟",
+   "options": [
+    {
+     "text": "met"
+    },
+    {
+     "text": "meeted"
+    },
+    {
+     "text": "meets"
+    },
+    {
+     "text": "meat"
+    }
+   ],
+   "answer": 0,
+   "explain": "meet فعل غير منتظم، ماضيه met."
+  },
+  {
+   "q": "اختار الصح: Did she ___ yesterday?",
+   "options": [
+    {
+     "text": "come"
+    },
+    {
+     "text": "came"
+    },
+    {
+     "text": "comes"
+    },
+    {
+     "text": "coming"
+    }
+   ],
+   "answer": 0,
+   "explain": "بعد did الفعل بيرجع لأصله."
   }
  ],
  "exercises": [
@@ -613,6 +872,12 @@ CURRICULUM.push(
    "hint": "استخدم ماضي.",
    "code": "Yesterday I wrote an email. Last week I bought a book. Two days ago I came late.",
    "why": "الكلمات دي بتحدد الوقت في الماضي."
+  },
+  {
+   "task": "احكي يومك إمبارح في 5 جمل بالماضي واربطهم بـ then و finally.",
+   "hint": "ماضي في كل جملة.",
+   "code": "First I woke up. Then I studied. After that I ate lunch. Then I met my friend. Finally I slept.",
+   "why": "كلمات الربط بتخلي الحكاية مترتبة."
   }
  ]
 },
@@ -697,6 +962,65 @@ CURRICULUM.push(
    ]
   },
   {
+   "type": "h",
+   "text": "توقعات وعروض"
+  },
+  {
+   "type": "ex",
+   "items": [
+    [
+     "I think it will be hot tomorrow.",
+     "أعتقد هيبقى حر بكرة"
+    ],
+    [
+     "I will carry your bag.",
+     "هشيل لك الشنطة"
+    ],
+    [
+     "Shall we go? (اقتراح)",
+     "نمشي؟"
+    ],
+    [
+     "Perhaps she will come.",
+     "يمكن تيجي"
+    ]
+   ]
+  },
+  {
+   "type": "h",
+   "text": "الفرق بين الاتنين"
+  },
+  {
+   "type": "table",
+   "head": [
+    "will",
+    "going to"
+   ],
+   "rows": [
+    [
+     "قرار لحظي",
+     "خطة مقررة"
+    ],
+    [
+     "وعد",
+     "نية واضحة"
+    ],
+    [
+     "توقع من رأيك",
+     "توقع من دلايل (غيوم)"
+    ]
+   ]
+  },
+  {
+   "type": "ex",
+   "items": [
+    [
+     "Look at the clouds! It is going to rain.",
+     "بص على السحاب! هتمطر"
+    ]
+   ]
+  },
+  {
    "type": "note",
    "text": "بعد will الفعل بيفضل زي ما هو من غير to."
   }
@@ -777,6 +1101,44 @@ CURRICULUM.push(
    ],
    "answer": 0,
    "explain": "الإجابة القصيرة بتعيد will."
+  },
+  {
+   "q": "الأنسب: \"Look at the clouds!\" It ___ rain.",
+   "options": [
+    {
+     "text": "is going to"
+    },
+    {
+     "text": "will be"
+    },
+    {
+     "text": "did"
+    },
+    {
+     "text": "does"
+    }
+   ],
+   "answer": 0,
+   "explain": "لما في دلايل قدامك بنستخدم going to."
+  },
+  {
+   "q": "الأنسب لعرض مساعدة لحظي؟",
+   "options": [
+    {
+     "text": "I will help you."
+    },
+    {
+     "text": "I am going to helping you."
+    },
+    {
+     "text": "I helped you tomorrow."
+    },
+    {
+     "text": "I help you tomorrow."
+    }
+   ],
+   "answer": 0,
+   "explain": "العرض اللحظي بنقوله بـ will."
   }
  ],
  "exercises": [
@@ -797,6 +1159,12 @@ CURRICULUM.push(
    "hint": "will للوعد وgoing to للخطة.",
    "code": "I will call you. I will help you. I am going to study. I am going to travel.",
    "why": "التفريق بين الوعد والخطة."
+  },
+  {
+   "task": "اكتب توقعين عن بكرة بـ will وتوقع بدلايل بـ going to.",
+   "hint": "will للرأي وgoing to للدلايل.",
+   "code": "I think it will be sunny. I think the match will be good. The sky is black, it is going to rain.",
+   "why": "حسب سبب التوقع."
   }
  ]
 },
@@ -883,6 +1251,65 @@ CURRICULUM.push(
    ]
   },
   {
+   "type": "h",
+   "text": "الواجب والمنع"
+  },
+  {
+   "type": "table",
+   "head": [
+    "الفعل",
+    "المعنى",
+    "مثال"
+   ],
+   "rows": [
+    [
+     "must",
+     "واجب قوي",
+     "You must stop at a red light."
+    ],
+    [
+     "must not",
+     "ممنوع",
+     "You must not enter."
+    ],
+    [
+     "have to",
+     "مضطر",
+     "I have to wake up early."
+    ],
+    [
+     "do not have to",
+     "مش مضطر",
+     "You do not have to come."
+    ]
+   ]
+  },
+  {
+   "type": "note",
+   "text": "must not يعني ممنوع، لكن do not have to يعني مش لازم. فرق كبير."
+  },
+  {
+   "type": "h",
+   "text": "إذن وعرض"
+  },
+  {
+   "type": "ex",
+   "items": [
+    [
+     "Can I use your phone?",
+     "ممكن أستخدم تليفونك؟"
+    ],
+    [
+     "Would you like some tea?",
+     "تحب شاي؟"
+    ],
+    [
+     "Shall I open the door?",
+     "أفتح الباب؟"
+    ]
+   ]
+  },
+  {
    "type": "note",
    "text": "مفيش s مع he و she: She can swim."
   }
@@ -963,6 +1390,44 @@ CURRICULUM.push(
    ],
    "answer": 0,
    "explain": "Could you أكتر أدباً من الأمر المباشر."
+  },
+  {
+   "q": "إيه معنى You do not have to come؟",
+   "options": [
+    {
+     "text": "مش لازم تيجي"
+    },
+    {
+     "text": "ممنوع تيجي"
+    },
+    {
+     "text": "لازم تيجي"
+    },
+    {
+     "text": "مش هتيجي"
+    }
+   ],
+   "answer": 0,
+   "explain": "do not have to بتعني مش مضطر."
+  },
+  {
+   "q": "إيه معنى You must not enter؟",
+   "options": [
+    {
+     "text": "ممنوع تدخل"
+    },
+    {
+     "text": "مش لازم تدخل"
+    },
+    {
+     "text": "ممكن تدخل"
+    },
+    {
+     "text": "هتدخل"
+    }
+   ],
+   "answer": 0,
+   "explain": "must not بتعني ممنوع."
   }
  ],
  "exercises": [
@@ -983,6 +1448,12 @@ CURRICULUM.push(
    "hint": "Could you / May I.",
    "code": "Could you open the window? May I sit here?",
    "why": "الأسئلة بتبدأ بالمودال."
+  },
+  {
+   "task": "اكتب 2 قواعد لمكان بتعرفه بـ must not وdo not have to.",
+   "hint": "ممنوع ومش لازم.",
+   "code": "In the library you must not talk loudly. You do not have to pay to enter.",
+   "why": "التفريق بين الممنوع وغير اللازم."
   }
  ]
 },
@@ -1106,6 +1577,64 @@ CURRICULUM.push(
    ]
   },
   {
+   "type": "h",
+   "text": "حوار في محل ملابس"
+  },
+  {
+   "type": "ex",
+   "items": [
+    [
+     "A: Can I help you?",
+     "أ: أقدر أساعدك؟"
+    ],
+    [
+     "B: Yes, I am looking for a jacket.",
+     "ب: أيوه، بدور على جاكيت"
+    ],
+    [
+     "A: What size are you?",
+     "أ: مقاسك كام؟"
+    ],
+    [
+     "B: Medium. How much is this one?",
+     "ب: ميديوم. ده بكام؟"
+    ],
+    [
+     "A: It is four hundred pounds.",
+     "أ: 400 جنيه"
+    ]
+   ]
+  },
+  {
+   "type": "h",
+   "text": "حوار في الجامعة"
+  },
+  {
+   "type": "ex",
+   "items": [
+    [
+     "A: Excuse me, is this seat free?",
+     "أ: لو سمحت، الكرسي ده فاضي؟"
+    ],
+    [
+     "B: Yes, please sit down.",
+     "ب: أيوه اتفضل"
+    ],
+    [
+     "A: Which lecture is this?",
+     "أ: دي محاضرة إيه؟"
+    ],
+    [
+     "B: It is the English lecture.",
+     "ب: محاضرة الإنجليزي"
+    ]
+   ]
+  },
+  {
+   "type": "note",
+   "text": "اتعلم الحوارات كبلوكات كاملة، مش كلمات منفصلة."
+  },
+  {
    "type": "note",
    "text": "would like أكتر أدباً من want: I would like a coffee بدل I want a coffee."
   }
@@ -1186,6 +1715,44 @@ CURRICULUM.push(
    ],
    "answer": 0,
    "explain": "بنطلب الإعادة بـ can you repeat that."
+  },
+  {
+   "q": "إيه الجملة المناسبة لما البايع يسألك محتاج حاجة؟",
+   "options": [
+    {
+     "text": "Yes, I am looking for a jacket."
+    },
+    {
+     "text": "No, I have breakfast."
+    },
+    {
+     "text": "I was in Cairo."
+    },
+    {
+     "text": "It is Monday."
+    }
+   ],
+   "answer": 0,
+   "explain": "بنرد بطلب واضح."
+  },
+  {
+   "q": "Is this seat free معناها؟",
+   "options": [
+    {
+     "text": "الكرسي ده فاضي؟"
+    },
+    {
+     "text": "الكرسي ده مجاني؟"
+    },
+    {
+     "text": "ده كرسي حر؟"
+    },
+    {
+     "text": "مين قاعد؟"
+    }
+   ],
+   "answer": 0,
+   "explain": "free هنا بمعنى فاضي."
   }
  ],
  "exercises": [
@@ -1206,6 +1773,12 @@ CURRICULUM.push(
    "hint": "Excuse me و Turn left.",
    "code": "A: Excuse me, where is the station? B: Go straight and turn left. A: Thank you.",
    "why": "السؤال عن الاتجاهات موقف مهم."
+  },
+  {
+   "task": "اكتب حوار في محل (6 جمل).",
+   "hint": "سلام، طلب، سعر.",
+   "code": "A: Can I help you? B: Yes, I am looking for shoes. A: What size? B: Forty-two. How much are they? A: Five hundred pounds.",
+   "why": "الحوار فيه طلب ومقاس وسعر."
   }
  ]
 },
@@ -1253,6 +1826,33 @@ CURRICULUM.push(
     "حطيت s مع he و she في المضارع البسيط؟",
     "الماضي صح (went مش goed)؟",
     "قريتها بصوت عالي؟"
+   ]
+  },
+  {
+   "type": "h",
+   "text": "أخطاء شائعة لازم تتجنبها"
+  },
+  {
+   "type": "list",
+   "items": [
+    "I am agree. (الصح: I agree.)",
+    "She go to school. (الصح: She goes.)",
+    "He don't like tea. (الصح: He doesn't like tea.)",
+    "I went to home. (الصح: I went home.)",
+    "Yesterday I go. (الصح: Yesterday I went.)"
+   ]
+  },
+  {
+   "type": "h",
+   "text": "خطة تكمل بيها"
+  },
+  {
+   "type": "list",
+   "items": [
+    "سمّع نفسك 5 دقايق كل يوم وإنت بتقرا بصوت عالي.",
+    "تعلّم 5 كلمات جديدة كل يوم مع جملة لكل كلمة.",
+    "اتفرج على مقطع قصير بالإنجليزي مع ترجمة إنجليزي.",
+    "اكتب 3 جمل عن يومك قبل ما تنام."
    ]
   },
   {
@@ -1336,6 +1936,44 @@ CURRICULUM.push(
    ],
    "answer": 0,
    "explain": "مع she بنزود es وبنحوّل y لـ ies."
+  },
+  {
+   "q": "أنهي جملة صح؟",
+   "options": [
+    {
+     "text": "I went home."
+    },
+    {
+     "text": "I went to home."
+    },
+    {
+     "text": "I am went home."
+    },
+    {
+     "text": "I go home yesterday."
+    }
+   ],
+   "answer": 0,
+   "explain": "home بتتقال من غير to بعد went."
+  },
+  {
+   "q": "إزاي بتصحح: He don't like tea?",
+   "options": [
+    {
+     "text": "He doesn't like tea."
+    },
+    {
+     "text": "He not like tea."
+    },
+    {
+     "text": "He isn't like tea."
+    },
+    {
+     "text": "He didn't likes tea."
+    }
+   ],
+   "answer": 0,
+   "explain": "مع he بنستخدم doesn't."
   }
  ],
  "exercises": [
@@ -1356,6 +1994,12 @@ CURRICULUM.push(
    "hint": "استخدم to be والمضارع البسيط.",
    "code": "I have a small family. My father is a teacher. My mother works at a bank. I have one sister. We live in Assiut.",
    "why": "أي موضوع تعرفه كويس بيسهل الكتابة."
+  },
+  {
+   "task": "صحح الجمل: She go to school. He don't like tea. I went to home.",
+   "hint": "ركز على s ومع does.",
+   "code": "She goes to school. He doesn't like tea. I went home.",
+   "why": "التصحيح بيثبت القواعد."
   }
  ]
 }
