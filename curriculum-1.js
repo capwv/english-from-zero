@@ -131,6 +131,47 @@ CURRICULUM.push(
    "text": "النطق بالعربي تقريبي بس. اعتمد على زرار 🔊 في المعمل للنطق الحقيقي."
   },
   {
+   "type": "h",
+   "text": "الأصوات الطويلة والقصيرة"
+  },
+  {
+   "type": "p",
+   "text": "نفس الحرف المتحرك ممكن يتنطق قصير أو طويل، وده بيغيّر معنى الكلمة: ship (سفينة) و sheep (خروف), sit (يقعد) و seat (كرسي), full (مليان) و fool (أحمق)."
+  },
+  {
+   "type": "ex",
+   "items": [
+    [
+     "ship / sheep",
+     "سفينة / خروف"
+    ],
+    [
+     "sit / seat",
+     "يقعد / كرسي"
+    ],
+    [
+     "bad / bed",
+     "سيء / سرير"
+    ],
+    [
+     "cap / cup",
+     "كاب / كوب"
+    ]
+   ]
+  },
+  {
+   "type": "h",
+   "text": "الـ Silent Letters"
+  },
+  {
+   "type": "p",
+   "text": "في حروف مكتوبة ومبتتنطقش: knife (نايف) الـ k ساكتة، write (رايت) الـ w ساكتة، hour (آور) الـ h ساكتة، psychology (سايكولوجي) الـ p ساكتة."
+  },
+  {
+   "type": "note",
+   "text": "لو سمعت كلمة ومعرفتش تكتبها، اسأل: في حرف ساكت؟ ده بيحصل كتير."
+  },
+  {
    "type": "note",
    "text": "اضغط على زرار 🔊 في المعمل وسمّع الكلمة، وكرر وراها بصوت عالي. السمع والتكرار أهم من الحفظ."
   }
@@ -211,6 +252,44 @@ CURRICULUM.push(
    ],
    "answer": 0,
    "explain": "اسم الحرف W هو \"دابل يو\" يعني double U."
+  },
+  {
+   "q": "أنهي كلمة فيها حرف ساكت؟",
+   "options": [
+    {
+     "text": "knife"
+    },
+    {
+     "text": "cat"
+    },
+    {
+     "text": "pen"
+    },
+    {
+     "text": "sit"
+    }
+   ],
+   "answer": 0,
+   "explain": "الـ k في أول knife مبتتنطقش، بنقولها نايف."
+  },
+  {
+   "q": "الفرق بين ship و sheep هو؟",
+   "options": [
+    {
+     "text": "طول صوت الحرف المتحرك"
+    },
+    {
+     "text": "عدد الحروف"
+    },
+    {
+     "text": "مكان الكلمة في الجملة"
+    },
+    {
+     "text": "مفيش فرق"
+    }
+   ],
+   "answer": 0,
+   "explain": "ship فيها صوت قصير و sheep فيها صوت طويل، وده بيغيّر المعنى."
   }
  ],
  "exercises": [
@@ -231,6 +310,12 @@ CURRICULUM.push(
    "hint": "استخدم أسماء الحروف مش أصواتها.",
    "code": "مثال لـ Ali: إيه، إل، آي.",
    "why": "التهجئة بتتطلب في المكالمات والحجوزات."
+  },
+  {
+   "task": "اقرا الزوجين بصوت عالي وانتبه للفرق: sit / seat و full / fool.",
+   "hint": "مدّ الصوت في الكلمة التانية.",
+   "code": "sit (قصير) / seat (طويل). full (قصير) / fool (طويل).",
+   "why": "الفرق في طول الصوت بيغيّر المعنى."
   }
  ]
 },
@@ -354,6 +439,64 @@ CURRICULUM.push(
    "text": "نطق مهم: Good morning (جود مورنينج), Thank you (ثانك يو), Nice to meet you (نايس تو ميت يو)."
   },
   {
+   "type": "h",
+   "text": "تعريف حد بحد"
+  },
+  {
+   "type": "ex",
+   "items": [
+    [
+     "This is my friend, Omar.",
+     "ده صاحبي عمر"
+    ],
+    [
+     "Omar, this is Sara.",
+     "عمر، دي سارة"
+    ],
+    [
+     "Pleased to meet you.",
+     "تشرفت بمعرفتك"
+    ],
+    [
+     "How do you do?",
+     "اتشرفنا (رسمي جداً)"
+    ]
+   ]
+  },
+  {
+   "type": "h",
+   "text": "حوار تعارف كامل"
+  },
+  {
+   "type": "ex",
+   "items": [
+    [
+     "A: Hi, I am Omar. What is your name?",
+     "أ: أهلاً، أنا عمر. اسمك إيه؟"
+    ],
+    [
+     "B: My name is Sara. Nice to meet you.",
+     "ب: اسمي سارة. تشرفنا"
+    ],
+    [
+     "A: Where are you from?",
+     "أ: إنت منين؟"
+    ],
+    [
+     "B: I am from Cairo. And you?",
+     "ب: أنا من القاهرة. وإنت؟"
+    ],
+    [
+     "A: I am from Assiut.",
+     "أ: أنا من أسيوط"
+    ]
+   ]
+  },
+  {
+   "type": "note",
+   "text": "في الشغل بنفضل Nice to meet you, ومع الأصحاب Hi و Hey كفاية."
+  },
+  {
    "type": "note",
    "text": "في العربي بنقول \"أنا طالب\" من غير فعل. في الإنجليزي لازم تحط am أو is أو are: I am a student."
   }
@@ -434,6 +577,44 @@ CURRICULUM.push(
    ],
    "answer": 0,
    "explain": "بنرد على الشكر بـ You are welcome يعني العفو."
+  },
+  {
+   "q": "إيه الجملة الأنسب لتعريف صاحبك لحد؟",
+   "options": [
+    {
+     "text": "This is my friend, Omar."
+    },
+    {
+     "text": "He is my friend Omar this."
+    },
+    {
+     "text": "My friend Omar is this."
+    },
+    {
+     "text": "Omar friend is."
+    }
+   ],
+   "answer": 0,
+   "explain": "This is + الاسم هي الصيغة الشائعة للتعريف."
+  },
+  {
+   "q": "سؤال \"إنت منين؟\" بالإنجليزي؟",
+   "options": [
+    {
+     "text": "Where are you from?"
+    },
+    {
+     "text": "What are you from?"
+    },
+    {
+     "text": "Who are you from?"
+    },
+    {
+     "text": "Where do you from?"
+    }
+   ],
+   "answer": 0,
+   "explain": "بنستخدم Where مع are you from."
   }
  ],
  "exercises": [
@@ -454,6 +635,12 @@ CURRICULUM.push(
    "hint": "استخدم Good afternoon و Thank you.",
    "code": "A: Good afternoon! B: Good afternoon. How are you? A: I am fine, thank you.",
    "why": "التحية حسب الوقت من أسهل طرق تبان مؤدب."
+  },
+  {
+   "task": "اكتب حوار تعارف من 5 جمل بين طالب جديد وزميله.",
+   "hint": "الاسم، المكان، الدراسة.",
+   "code": "A: Hi, I am Ali. B: Hi, I am Mona. Nice to meet you. A: Where are you from? B: I am from Cairo. I study business.",
+   "why": "التعارف بيبدأ بالاسم ثم المكان ثم الدراسة."
   }
  ]
 },
@@ -528,6 +715,69 @@ CURRICULUM.push(
     "He is work here. غلط. الصح: He works here. أو He is working here.",
     "Is she a teacher? Yes, she is. مش Yes, she teacher."
    ]
+  },
+  {
+   "type": "h",
+   "text": "وصف الناس والحاجات"
+  },
+  {
+   "type": "ex",
+   "items": [
+    [
+     "My brother is tall.",
+     "أخويا طويل"
+    ],
+    [
+     "The room is not big.",
+     "الأوضة مش كبيرة"
+    ],
+    [
+     "Are you tired?",
+     "إنت تعبان؟"
+    ],
+    [
+     "The exam is difficult.",
+     "الامتحان صعب"
+    ]
+   ]
+  },
+  {
+   "type": "table",
+   "head": [
+    "صفة",
+    "معناها",
+    "عكسها"
+   ],
+   "rows": [
+    [
+     "big",
+     "كبير",
+     "small"
+    ],
+    [
+     "hot",
+     "سخن",
+     "cold"
+    ],
+    [
+     "easy",
+     "سهل",
+     "difficult"
+    ],
+    [
+     "happy",
+     "مبسوط",
+     "sad"
+    ]
+   ]
+  },
+  {
+   "type": "h",
+   "text": "أماكن ومشاعر"
+  },
+  {
+   "type": "p",
+   "text": "بنستخدم to be لوصف المكان: I am at home. وللمشاعر: I am happy. وللعمر: I am 21 years old. لاحظ إننا مبنقولش I have 21 years."
   },
   {
    "type": "note",
@@ -610,6 +860,44 @@ CURRICULUM.push(
    ],
    "answer": 1,
    "explain": "agree فعل، فمش بنحط معاه am."
+  },
+  {
+   "q": "إزاي تقول \"عندي 21 سنة\" صح؟",
+   "options": [
+    {
+     "text": "I am 21 years old."
+    },
+    {
+     "text": "I have 21 years."
+    },
+    {
+     "text": "I am have 21."
+    },
+    {
+     "text": "My age has 21."
+    }
+   ],
+   "answer": 0,
+   "explain": "العمر بنوصفه بـ to be مش بـ have."
+  },
+  {
+   "q": "عكس easy؟",
+   "options": [
+    {
+     "text": "difficult"
+    },
+    {
+     "text": "small"
+    },
+    {
+     "text": "cold"
+    },
+    {
+     "text": "sad"
+    }
+   ],
+   "answer": 0,
+   "explain": "الصفة المعاكسة لـ easy هي difficult."
   }
  ],
  "exercises": [
@@ -630,6 +918,12 @@ CURRICULUM.push(
    "hint": "شيل to be الزايدة أو حوّل الفعل.",
    "code": "He works here. I agree.",
    "why": "الفعل العادي مبياخدش am أو is."
+  },
+  {
+   "task": "اوصف أوضتك بـ 4 جمل فيها صفات.",
+   "hint": "is و is not و are.",
+   "code": "My room is small. The bed is comfortable. The window is big. The desk is not tidy.",
+   "why": "to be بتوصل الاسم بصفته."
   }
  ]
 },
@@ -741,6 +1035,39 @@ CURRICULUM.push(
    "text": "أول مرة تذكر حاجة بتقول a أو an, وبعد كده the."
   },
   {
+   "type": "h",
+   "text": "بدون أداة (zero article)"
+  },
+  {
+   "type": "p",
+   "text": "في حالات مبنحطش فيها a أو the: مع الأسماء الجمع العامة (I like books), ومع الوجبات (I have breakfast), ومع اللغات والدول غالباً (I speak English. She lives in Egypt)."
+  },
+  {
+   "type": "h",
+   "text": "some و any"
+  },
+  {
+   "type": "ex",
+   "items": [
+    [
+     "I have some books.",
+     "عندي شوية كتب"
+    ],
+    [
+     "Do you have any questions?",
+     "عندك أي أسئلة؟"
+    ],
+    [
+     "I do not have any money.",
+     "معنديش أي فلوس"
+    ]
+   ]
+  },
+  {
+   "type": "p",
+   "text": "some في الإثبات و any في النفي والسؤال."
+  },
+  {
    "type": "note",
    "text": "الاعتماد على الصوت مش على الحرف المكتوب: an hour لكن a university."
   }
@@ -821,6 +1148,44 @@ CURRICULUM.push(
    ],
    "answer": 0,
    "explain": "العربية اتذكرت قبل كده فبنستخدم the."
+  },
+  {
+   "q": "كمّل: I do not have ___ money.",
+   "options": [
+    {
+     "text": "any"
+    },
+    {
+     "text": "some"
+    },
+    {
+     "text": "a"
+    },
+    {
+     "text": "an"
+    }
+   ],
+   "answer": 0,
+   "explain": "في النفي بنستخدم any."
+  },
+  {
+   "q": "أنهي جملة صح؟",
+   "options": [
+    {
+     "text": "I have breakfast at eight."
+    },
+    {
+     "text": "I have a breakfast at eight."
+    },
+    {
+     "text": "I have the breakfasts at eight."
+    },
+    {
+     "text": "I have an breakfast."
+    }
+   ],
+   "answer": 0,
+   "explain": "مع الوجبات بنقول من غير أداة."
   }
  ],
  "exercises": [
@@ -841,6 +1206,12 @@ CURRICULUM.push(
    "hint": "أول مرة a وبعدها the.",
    "code": "I saw a movie. The movie was great.",
    "why": "a لأول مرة، the لما تكرر الحاجة."
+  },
+  {
+   "task": "كمّل بـ some أو any: I have ___ friends. Do you have ___ time? She does not have ___ brothers.",
+   "hint": "إثبات some, نفي وسؤال any.",
+   "code": "some friends, any time, any brothers.",
+   "why": "القاعدة حسب نوع الجملة."
   }
  ]
 },
@@ -946,6 +1317,64 @@ CURRICULUM.push(
    "text": "الترتيب: first (1st) و second (2nd) و third (3rd) و fourth (4th) و fifth (5th)."
   },
   {
+   "type": "h",
+   "text": "الأرقام الكبيرة"
+  },
+  {
+   "type": "table",
+   "head": [
+    "الرقم",
+    "بالإنجليزي"
+   ],
+   "rows": [
+    [
+     "101",
+     "one hundred and one"
+    ],
+    [
+     "250",
+     "two hundred and fifty"
+    ],
+    [
+     "1,000",
+     "one thousand"
+    ],
+    [
+     "2,500",
+     "two thousand five hundred"
+    ],
+    [
+     "1,000,000",
+     "one million"
+    ]
+   ]
+  },
+  {
+   "type": "h",
+   "text": "الفلوس والأسعار"
+  },
+  {
+   "type": "ex",
+   "items": [
+    [
+     "It costs fifty pounds.",
+     "سعره 50 جنيه"
+    ],
+    [
+     "How much is this? It is twenty pounds.",
+     "ده بكام؟ عشرين جنيه"
+    ],
+    [
+     "I have two hundred pounds.",
+     "معايا 200 جنيه"
+    ]
+   ]
+  },
+  {
+   "type": "note",
+   "text": "الأرقام الكبيرة: الفاصلة كل 3 أرقام بالإنجليزي (1,000) مش النقطة."
+  },
+  {
    "type": "note",
    "text": "الفرق بين thirteen و thirty في النطق: في thirteen الضغط على آخر الكلمة (teen), وفي thirty الضغط على أولها."
   }
@@ -1026,6 +1455,44 @@ CURRICULUM.push(
    ],
    "answer": 0,
    "explain": "بنقول March 3rd أو the third of March."
+  },
+  {
+   "q": "إزاي تقول 250؟",
+   "options": [
+    {
+     "text": "two hundred and fifty"
+    },
+    {
+     "text": "two fifty hundred"
+    },
+    {
+     "text": "twenty five hundred"
+    },
+    {
+     "text": "two five zero hundred"
+    }
+   ],
+   "answer": 0,
+   "explain": "المئات بعدها and بعدها العشرات: two hundred and fifty."
+  },
+  {
+   "q": "إيه معنى It costs fifty pounds؟",
+   "options": [
+    {
+     "text": "سعره 50 جنيه"
+    },
+    {
+     "text": "وزنه 50 رطل"
+    },
+    {
+     "text": "طوله 50 سم"
+    },
+    {
+     "text": "عنده 50 جنيه"
+    }
+   ],
+   "answer": 0,
+   "explain": "costs معناها يكلف، فالجملة بتتكلم عن السعر."
   }
  ],
  "exercises": [
@@ -1046,6 +1513,12 @@ CURRICULUM.push(
    "hint": "الشهر ثم اليوم بالترتيب.",
    "code": "مثال: December 6th.",
    "why": "التواريخ بتتستخدم في كل نماذج السفر والتسجيل."
+  },
+  {
+   "task": "قول بالإنجليزي: 40 جنيه، 175 جنيه، 3,000 جنيه.",
+   "hint": "استخدم and بعد المئات.",
+   "code": "forty pounds. one hundred and seventy-five pounds. three thousand pounds.",
+   "why": "الأرقام الكبيرة بتتقسم لمئات وآلاف."
   }
  ]
 },
@@ -1146,6 +1619,60 @@ CURRICULUM.push(
    ]
   },
   {
+   "type": "h",
+   "text": "يوم كامل بالمضارع البسيط"
+  },
+  {
+   "type": "ex",
+   "items": [
+    [
+     "I wake up at seven.",
+     "بصحى 7"
+    ],
+    [
+     "I have breakfast and go to university.",
+     "بفطر وبروح الجامعة"
+    ],
+    [
+     "I study until five.",
+     "بذاكر لحد 5"
+    ],
+    [
+     "I have dinner with my family.",
+     "بتعشى مع أهلي"
+    ],
+    [
+     "I go to bed at eleven.",
+     "بنام 11"
+    ]
+   ]
+  },
+  {
+   "type": "h",
+   "text": "أسئلة عن الروتين"
+  },
+  {
+   "type": "ex",
+   "items": [
+    [
+     "What time do you wake up?",
+     "بتصحى الساعة كام؟"
+    ],
+    [
+     "How often do you study?",
+     "كل قد إيه بتذاكر؟"
+    ],
+    [
+     "Do you like coffee? Yes, I do. / No, I do not.",
+     "بتحب القهوة؟ أيوه / لأ"
+    ]
+   ]
+  },
+  {
+   "type": "note",
+   "text": "الإجابة القصيرة بتعيد do أو does: Does she work? Yes, she does."
+  },
+  {
    "type": "note",
    "text": "غلطة شائعة: Does he works. الصح: Does he work. حرف الـ s بيروح لـ does."
   }
@@ -1226,6 +1753,44 @@ CURRICULUM.push(
    ],
    "answer": 0,
    "explain": "never بتيجي قبل الفعل ومعاها الجملة مثبتة."
+  },
+  {
+   "q": "إيه الإجابة القصيرة الصح لـ Does he study؟",
+   "options": [
+    {
+     "text": "Yes, he does."
+    },
+    {
+     "text": "Yes, he studies."
+    },
+    {
+     "text": "Yes, he do."
+    },
+    {
+     "text": "Yes, he is."
+    }
+   ],
+   "answer": 0,
+   "explain": "بنعيد does في الإجابة القصيرة."
+  },
+  {
+   "q": "اختار الصح: What time ___ she wake up?",
+   "options": [
+    {
+     "text": "does"
+    },
+    {
+     "text": "do"
+    },
+    {
+     "text": "is"
+    },
+    {
+     "text": "does she"
+    }
+   ],
+   "answer": 0,
+   "explain": "مع she بنستخدم does قبل الفاعل."
   }
  ],
  "exercises": [
@@ -1246,6 +1811,12 @@ CURRICULUM.push(
    "hint": "الكلمة قبل الفعل.",
    "code": "I always drink tea. I usually study at night. I never skip class.",
    "why": "ظرف التكرار قبل الفعل العادي."
+  },
+  {
+   "task": "اكتب روتين زميلك (he أو she) في 5 جمل.",
+   "hint": "لاحظ s مع he و she.",
+   "code": "He wakes up at six. He goes to work. He eats lunch at two. He studies at night. He sleeps at eleven.",
+   "why": "مع he و she الفعل بياخد s."
   }
  ]
 },
@@ -1348,6 +1919,52 @@ CURRICULUM.push(
    ]
   },
   {
+   "type": "h",
+   "text": "مضارع مستمر لخطط قريبة"
+  },
+  {
+   "type": "p",
+   "text": "ممكن نستخدمه لخطة اتحددت: I am meeting my friend tonight. We are traveling tomorrow."
+  },
+  {
+   "type": "h",
+   "text": "البسيط ولا المستمر؟"
+  },
+  {
+   "type": "table",
+   "head": [
+    "السؤال",
+    "الصيغة",
+    "مثال"
+   ],
+   "rows": [
+    [
+     "بيحصل دلوقتي؟",
+     "مستمر",
+     "She is reading now."
+    ],
+    [
+     "عادة؟",
+     "بسيط",
+     "She reads every night."
+    ],
+    [
+     "حقيقة؟",
+     "بسيط",
+     "Water boils at 100°C."
+    ],
+    [
+     "خطة قريبة؟",
+     "مستمر",
+     "I am meeting him tonight."
+    ]
+   ]
+  },
+  {
+   "type": "note",
+   "text": "كلمات زي now و at the moment بتقولك مستمر. كلمات زي every day و usually بتقولك بسيط."
+  },
+  {
    "type": "note",
    "text": "أفعال زي know و like و want نادراً بنستخدمها مع ing."
   }
@@ -1428,6 +2045,44 @@ CURRICULUM.push(
    ],
    "answer": 1,
    "explain": "بنقدّم are على الفاعل ونسيب الفعل بـ ing."
+  },
+  {
+   "q": "اختار الصح: Look! It ___.",
+   "options": [
+    {
+     "text": "is raining"
+    },
+    {
+     "text": "rains"
+    },
+    {
+     "text": "rain"
+    },
+    {
+     "text": "are raining"
+    }
+   ],
+   "answer": 0,
+   "explain": "Look بتدل على حاجة بتحصل قدامك دلوقتي."
+  },
+  {
+   "q": "اختار الصح: Water ___ at 100 degrees.",
+   "options": [
+    {
+     "text": "boils"
+    },
+    {
+     "text": "is boiling"
+    },
+    {
+     "text": "boil"
+    },
+    {
+     "text": "are boiling"
+    }
+   ],
+   "answer": 0,
+   "explain": "الحقايق العلمية بتتقال بالمضارع البسيط."
   }
  ],
  "exercises": [
@@ -1448,6 +2103,12 @@ CURRICULUM.push(
    "hint": "Are you + ing.",
    "code": "Are you studying? What are you eating?",
    "why": "السؤال بيتكون من to be + الفاعل + ing."
+  },
+  {
+   "task": "اكتب جملتين: واحدة عادة وواحدة دلوقتي عن نفس الفعل (drink).",
+   "hint": "بسيط وبعدين مستمر.",
+   "code": "I drink tea every morning. I am drinking tea now.",
+   "why": "الفرق في الوقت: عادة أو لحظة."
   }
  ]
 }
