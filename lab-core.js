@@ -79,6 +79,26 @@ var tools=[
     "why": "went هي ماضي go."
    },
    {
+    "ar": "ممكن تساعدني؟",
+    "words": [
+     "Could",
+     "you",
+     "help",
+     "me"
+    ],
+    "why": "Could في الأول للطلب المؤدب."
+   },
+   {
+    "ar": "هو مبيشربش قهوة.",
+    "words": [
+     "He",
+     "never",
+     "drinks",
+     "coffee"
+    ],
+    "why": "never قبل الفعل ومع he بنزود s."
+   },
+   {
     "ar": "هتصل بيك بعدين.",
     "words": [
      "I",
@@ -285,11 +305,18 @@ var tools=[
     "why": "26 - 5 = 21 حرف ساكن."
    },
    {
-    "q": "الساعة 3:30. كام الساعة بالإنجليزي \"half past ...\": اكتب الرقم.",
-    "answer": 3,
+    "q": "كام حرف متحرك (A E I O U) في كلمة education؟",
+    "answer": 5,
     "tol": 0,
-    "hint": "half past + رقم الساعة",
-    "why": "half past three."
+    "hint": "عدّ الحروف a e i o u بس",
+    "why": "e و u و a و i و o = 5 حروف متحركة."
+   },
+   {
+    "q": "كام حرف في كلمة international؟",
+    "answer": 13,
+    "tol": 0,
+    "hint": "عدّ كل الحروف",
+    "why": "international = 13 حرف."
    }
   ]
  }
