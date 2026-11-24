@@ -90,6 +90,47 @@ CURRICULUM.push(
    ]
   },
   {
+   "type": "h",
+   "text": "أسماء الحروف (للتهجئة)"
+  },
+  {
+   "type": "p",
+   "text": "لما بتتهجى اسمك لحد على التليفون، بتحتاج أسماء الحروف: A (إيه), B (بي), C (سي), D (دي), E (إي), F (إف), G (جي), H (إيتش), I (آي), J (جيه), K (كيه), L (إل), M (إم), N (إن), O (أو), P (بي), Q (كيو), R (آر), S (إس), T (تي), U (يو), V (في), W (دابل يو), X (إكس), Y (واي), Z (زد أو زي)."
+  },
+  {
+   "type": "h",
+   "text": "نطق كلمات مهمة (تقريبي بالعربي)"
+  },
+  {
+   "type": "ex",
+   "items": [
+    [
+     "hello (هَلّو)",
+     "أهلاً"
+    ],
+    [
+     "water (واتر)",
+     "مياه"
+    ],
+    [
+     "teacher (تيتشر)",
+     "مدرس"
+    ],
+    [
+     "thank you (ثانك يو)",
+     "شكراً"
+    ],
+    [
+     "please (بليز)",
+     "لو سمحت"
+    ]
+   ]
+  },
+  {
+   "type": "note",
+   "text": "النطق بالعربي تقريبي بس. اعتمد على زرار 🔊 في المعمل للنطق الحقيقي."
+  },
+  {
    "type": "note",
    "text": "اضغط على زرار 🔊 في المعمل وسمّع الكلمة، وكرر وراها بصوت عالي. السمع والتكرار أهم من الحفظ."
   }
@@ -151,6 +192,25 @@ CURRICULUM.push(
    ],
    "answer": 1,
    "explain": "صوت V بيتعمل بسنان على الشفة السفلى، وده الفرق بينه وبين B."
+  },
+  {
+   "q": "إزاي بتتهجى حرف W؟",
+   "options": [
+    {
+     "text": "دابل يو"
+    },
+    {
+     "text": "في"
+    },
+    {
+     "text": "يو"
+    },
+    {
+     "text": "دبليو واحد"
+    }
+   ],
+   "answer": 0,
+   "explain": "اسم الحرف W هو \"دابل يو\" يعني double U."
   }
  ],
  "exercises": [
@@ -165,6 +225,12 @@ CURRICULUM.push(
    "hint": "الحروف المتحركة: A E I O U.",
    "code": "مثال: Ahmed. المتحركة: A و e (اتنين). الساكنة: h و m و d (تلاتة).",
    "why": "أي اسم تكتبه هيدّيك تدريب على التفريق بين النوعين."
+  },
+  {
+   "task": "اتهجى اسمك بالإنجليزي بصوت عالي حرف حرف.",
+   "hint": "استخدم أسماء الحروف مش أصواتها.",
+   "code": "مثال لـ Ali: إيه، إل، آي.",
+   "why": "التهجئة بتتطلب في المكالمات والحجوزات."
   }
  ]
 },
@@ -255,6 +321,39 @@ CURRICULUM.push(
    "text": "في الكلام السريع بنختصر: I am = I'm, she is = she's, we are = we're."
   },
   {
+   "type": "h",
+   "text": "تحيات حسب الوقت"
+  },
+  {
+   "type": "ex",
+   "items": [
+    [
+     "Good afternoon.",
+     "مساء الخير (بعد الضهر)"
+    ],
+    [
+     "Good night.",
+     "تصبح على خير (قبل النوم)"
+    ],
+    [
+     "See you tomorrow.",
+     "أشوفك بكرة"
+    ],
+    [
+     "Thank you very much.",
+     "متشكر جداً"
+    ],
+    [
+     "You are welcome.",
+     "العفو"
+    ]
+   ]
+  },
+  {
+   "type": "p",
+   "text": "نطق مهم: Good morning (جود مورنينج), Thank you (ثانك يو), Nice to meet you (نايس تو ميت يو)."
+  },
+  {
    "type": "note",
    "text": "في العربي بنقول \"أنا طالب\" من غير فعل. في الإنجليزي لازم تحط am أو is أو are: I am a student."
   }
@@ -316,6 +415,25 @@ CURRICULUM.push(
    ],
    "answer": 1,
    "explain": "بنقولها لما بنقابل حد لأول مرة."
+  },
+  {
+   "q": "إيه الرد المناسب على Thank you؟",
+   "options": [
+    {
+     "text": "You are welcome."
+    },
+    {
+     "text": "Good night."
+    },
+    {
+     "text": "Nice to meet you."
+    },
+    {
+     "text": "See you tomorrow."
+    }
+   ],
+   "answer": 0,
+   "explain": "بنرد على الشكر بـ You are welcome يعني العفو."
   }
  ],
  "exercises": [
@@ -330,6 +448,12 @@ CURRICULUM.push(
    "hint": "ابدأ بـ Good morning وبعدها How are you.",
    "code": "A: Good morning! How are you? B: I am fine, thank you. And you? A: I am fine too.",
    "why": "التحية ثم السؤال ثم الرد هو الشكل المعتاد."
+  },
+  {
+   "task": "اكتب حوار قصير بعد الضهر بين اتنين، فيه تحية وشكر.",
+   "hint": "استخدم Good afternoon و Thank you.",
+   "code": "A: Good afternoon! B: Good afternoon. How are you? A: I am fine, thank you.",
+   "why": "التحية حسب الوقت من أسهل طرق تبان مؤدب."
   }
  ]
 },
@@ -394,6 +518,18 @@ CURRICULUM.push(
    ]
   },
   {
+   "type": "h",
+   "text": "أخطاء شائعة"
+  },
+  {
+   "type": "list",
+   "items": [
+    "I am agree. غلط. الصح: I agree. (agree فعل بحد ذاته).",
+    "He is work here. غلط. الصح: He works here. أو He is working here.",
+    "Is she a teacher? Yes, she is. مش Yes, she teacher."
+   ]
+  },
+  {
    "type": "note",
    "text": "في الإجابة القصيرة بنعيد الفعل بس: Yes, I am. وفي الإثبات الأفضل ما نختصرش الفعل في آخر الجملة."
   }
@@ -455,6 +591,25 @@ CURRICULUM.push(
    ],
    "answer": 1,
    "explain": "السؤال بـ are والإجابة بـ I بتستخدم am."
+  },
+  {
+   "q": "أنهي جملة غلط؟",
+   "options": [
+    {
+     "text": "I agree."
+    },
+    {
+     "text": "I am agree."
+    },
+    {
+     "text": "She is a nurse."
+    },
+    {
+     "text": "We are ready."
+    }
+   ],
+   "answer": 1,
+   "explain": "agree فعل، فمش بنحط معاه am."
   }
  ],
  "exercises": [
@@ -469,6 +624,12 @@ CURRICULUM.push(
    "hint": "ابدأ بـ Are أو Is.",
    "code": "Are you a student? Yes, I am. Is he from Cairo? No, he isn't. Are they ready? Yes, they are.",
    "why": "الأسئلة دي كلها بتبدأ بالفعل to be."
+  },
+  {
+   "task": "صحح: He is work here. I am agree.",
+   "hint": "شيل to be الزايدة أو حوّل الفعل.",
+   "code": "He works here. I agree.",
+   "why": "الفعل العادي مبياخدش am أو is."
   }
  ]
 },
@@ -555,6 +716,31 @@ CURRICULUM.push(
    ]
   },
   {
+   "type": "h",
+   "text": "إمتى نستخدم the؟"
+  },
+  {
+   "type": "ex",
+   "items": [
+    [
+     "I have a dog. The dog is big.",
+     "عندي كلب. الكلب كبير (اتذكر قبل كده)"
+    ],
+    [
+     "The sun is hot.",
+     "الشمس حارة (حاجة واحدة معروفة)"
+    ],
+    [
+     "She plays the piano.",
+     "هي بتعزف بيانو"
+    ]
+   ]
+  },
+  {
+   "type": "note",
+   "text": "أول مرة تذكر حاجة بتقول a أو an, وبعد كده the."
+  },
+  {
    "type": "note",
    "text": "الاعتماد على الصوت مش على الحرف المكتوب: an hour لكن a university."
   }
@@ -616,6 +802,25 @@ CURRICULUM.push(
    ],
    "answer": 2,
    "explain": "child جمعها غير منتظم: children."
+  },
+  {
+   "q": "كمّل: I have a car. ___ car is red.",
+   "options": [
+    {
+     "text": "The"
+    },
+    {
+     "text": "A"
+    },
+    {
+     "text": "An"
+    },
+    {
+     "text": "Some car"
+    }
+   ],
+   "answer": 0,
+   "explain": "العربية اتذكرت قبل كده فبنستخدم the."
   }
  ],
  "exercises": [
@@ -630,6 +835,12 @@ CURRICULUM.push(
    "hint": "كل كلمة ليها قاعدة.",
    "code": "cities, days, men, watches.",
    "why": "city بتبقى cities, لكن day بتاخد s بس لأن اللي قبل y حرف متحرك."
+  },
+  {
+   "task": "كمّل: I saw ___ movie. ___ movie was great.",
+   "hint": "أول مرة a وبعدها the.",
+   "code": "I saw a movie. The movie was great.",
+   "why": "a لأول مرة، the لما تكرر الحاجة."
   }
  ]
 },
@@ -706,6 +917,35 @@ CURRICULUM.push(
    ]
   },
   {
+   "type": "h",
+   "text": "الشهور وتواريخ"
+  },
+  {
+   "type": "p",
+   "text": "January, February, March, April, May, June, July, August, September, October, November, December."
+  },
+  {
+   "type": "ex",
+   "items": [
+    [
+     "My birthday is on June 5th.",
+     "عيد ميلادي 5 يونيو"
+    ],
+    [
+     "The exam is on Monday.",
+     "الامتحان يوم الإتنين"
+    ],
+    [
+     "It is 2026.",
+     "احنا في 2026"
+    ]
+   ]
+  },
+  {
+   "type": "p",
+   "text": "الترتيب: first (1st) و second (2nd) و third (3rd) و fourth (4th) و fifth (5th)."
+  },
+  {
    "type": "note",
    "text": "الفرق بين thirteen و thirty في النطق: في thirteen الضغط على آخر الكلمة (teen), وفي thirty الضغط على أولها."
   }
@@ -767,6 +1007,25 @@ CURRICULUM.push(
    ],
    "answer": 0,
    "explain": "السؤال المعتاد هو What time is it?"
+  },
+  {
+   "q": "إيه الصح لتاريخ 3 مارس؟",
+   "options": [
+    {
+     "text": "March 3rd"
+    },
+    {
+     "text": "March third day"
+    },
+    {
+     "text": "Three March"
+    },
+    {
+     "text": "Marching 3"
+    }
+   ],
+   "answer": 0,
+   "explain": "بنقول March 3rd أو the third of March."
   }
  ],
  "exercises": [
@@ -781,6 +1040,12 @@ CURRICULUM.push(
    "hint": "استخدم o'clock و quarter past و half past و quarter to.",
    "code": "It is seven o'clock. It is quarter past seven. It is half past seven. It is quarter to eight.",
    "why": "7:45 بتتقال quarter to eight لأنها ناقصة ربع على الساعة 8."
+  },
+  {
+   "task": "اكتب تاريخ ميلادك بالإنجليزي.",
+   "hint": "الشهر ثم اليوم بالترتيب.",
+   "code": "مثال: December 6th.",
+   "why": "التواريخ بتتستخدم في كل نماذج السفر والتسجيل."
   }
  ]
 },
@@ -853,6 +1118,34 @@ CURRICULUM.push(
    ]
   },
   {
+   "type": "h",
+   "text": "كلمات تدل على المضارع البسيط"
+  },
+  {
+   "type": "list",
+   "items": [
+    "always (دايماً) و usually (غالباً) و often (كتير) و sometimes (أحياناً) و never (أبداً).",
+    "مكانها: قبل الفعل العادي وبعد to be. I always study. She is always late."
+   ]
+  },
+  {
+   "type": "ex",
+   "items": [
+    [
+     "I usually wake up at seven.",
+     "غالباً بصحى الساعة 7"
+    ],
+    [
+     "He never drinks coffee.",
+     "هو مبيشربش قهوة"
+    ],
+    [
+     "She is often late.",
+     "هي كتير بتتأخر"
+    ]
+   ]
+  },
+  {
    "type": "note",
    "text": "غلطة شائعة: Does he works. الصح: Does he work. حرف الـ s بيروح لـ does."
   }
@@ -914,6 +1207,25 @@ CURRICULUM.push(
    ],
    "answer": 2,
    "explain": "بعد does الفعل بيرجع لأصله من غير s."
+  },
+  {
+   "q": "كمّل: He ___ drinks coffee. (أبداً)",
+   "options": [
+    {
+     "text": "never"
+    },
+    {
+     "text": "not"
+    },
+    {
+     "text": "don't"
+    },
+    {
+     "text": "no"
+    }
+   ],
+   "answer": 0,
+   "explain": "never بتيجي قبل الفعل ومعاها الجملة مثبتة."
   }
  ],
  "exercises": [
@@ -928,6 +1240,12 @@ CURRICULUM.push(
    "hint": "استخدم does.",
    "code": "He does not play football. / Does he play football?",
    "why": "الفعل بيرجع لأصله بعد does."
+  },
+  {
+   "task": "اكتب 3 جمل بـ always و usually و never.",
+   "hint": "الكلمة قبل الفعل.",
+   "code": "I always drink tea. I usually study at night. I never skip class.",
+   "why": "ظرف التكرار قبل الفعل العادي."
   }
  ]
 },
@@ -1005,6 +1323,31 @@ CURRICULUM.push(
    ]
   },
   {
+   "type": "h",
+   "text": "النفي والسؤال"
+  },
+  {
+   "type": "ex",
+   "items": [
+    [
+     "I am not working.",
+     "أنا مش بشتغل دلوقتي"
+    ],
+    [
+     "Is she cooking?",
+     "هي بتطبخ؟"
+    ],
+    [
+     "What are you doing?",
+     "إنت بتعمل إيه؟"
+    ],
+    [
+     "I am studying English.",
+     "أنا بذاكر إنجليزي"
+    ]
+   ]
+  },
+  {
    "type": "note",
    "text": "أفعال زي know و like و want نادراً بنستخدمها مع ing."
   }
@@ -1066,6 +1409,25 @@ CURRICULUM.push(
    ],
    "answer": 1,
    "explain": "بنضاعف الحرف الأخير لأن الكلمة قصيرة وبتنتهي بساكن بعد متحرك."
+  },
+  {
+   "q": "اختار السؤال الصح:",
+   "options": [
+    {
+     "text": "What you are doing?"
+    },
+    {
+     "text": "What are you doing?"
+    },
+    {
+     "text": "What do you doing?"
+    },
+    {
+     "text": "What are you do?"
+    }
+   ],
+   "answer": 1,
+   "explain": "بنقدّم are على الفاعل ونسيب الفعل بـ ing."
   }
  ],
  "exercises": [
@@ -1080,6 +1442,12 @@ CURRICULUM.push(
    "hint": "في فعل مساعد ناقص وفي واحد غلط.",
    "code": "She is cooking now. They are playing.",
    "why": "لازم am أو is أو are قبل الفعل بـ ing."
+  },
+  {
+   "task": "اسأل صاحبك سؤالين عن اللي بيعمله دلوقتي.",
+   "hint": "Are you + ing.",
+   "code": "Are you studying? What are you eating?",
+   "why": "السؤال بيتكون من to be + الفاعل + ing."
   }
  ]
 }
