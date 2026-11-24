@@ -74,6 +74,35 @@ CURRICULUM.push(
    ]
   },
   {
+   "type": "h",
+   "text": "كلمات سؤال إضافية"
+  },
+  {
+   "type": "ex",
+   "items": [
+    [
+     "Which book do you want?",
+     "أنهي كتاب عايز؟"
+    ],
+    [
+     "How much is this?",
+     "ده بكام؟"
+    ],
+    [
+     "How many students are there?",
+     "كام طالب موجود؟"
+    ],
+    [
+     "Whose pen is this?",
+     "ده قلم مين؟"
+    ]
+   ]
+  },
+  {
+   "type": "p",
+   "text": "How much للحاجات اللي مش بتتعد (سعر، ماء). How many للحاجات اللي بتتعد (طلاب، كتب)."
+  },
+  {
    "type": "note",
    "text": "بعد does بنستخدم الفعل من غير s: Where does she live؟"
   }
@@ -135,6 +164,25 @@ CURRICULUM.push(
    ],
    "answer": 1,
    "explain": "Who معناها مين."
+  },
+  {
+   "q": "كمّل: How ___ books do you have?",
+   "options": [
+    {
+     "text": "many"
+    },
+    {
+     "text": "much"
+    },
+    {
+     "text": "long"
+    },
+    {
+     "text": "old"
+    }
+   ],
+   "answer": 0,
+   "explain": "books بتتعد فبنستخدم many."
   }
  ],
  "exercises": [
@@ -149,6 +197,12 @@ CURRICULUM.push(
    "hint": "استخدم What و Where و How و Why.",
    "code": "What is your name? Where are you from? How are you? Why do you study English?",
    "why": "الأسئلة دي مفيدة في أي تعارف."
+  },
+  {
+   "task": "اسأل 3 أسئلة عن مكان وزمان وسبب.",
+   "hint": "Where و When و Why.",
+   "code": "Where do you study? When do you finish? Why do you like English?",
+   "why": "كل كلمة بتجيب نوع معلومة مختلف."
   }
  ]
 },
@@ -221,6 +275,35 @@ CURRICULUM.push(
    ]
   },
   {
+   "type": "h",
+   "text": "حروف جر إضافية"
+  },
+  {
+   "type": "ex",
+   "items": [
+    [
+     "I go to school.",
+     "بروح المدرسة"
+    ],
+    [
+     "She is from Egypt.",
+     "هي من مصر"
+    ],
+    [
+     "The cat is under the table.",
+     "القطة تحت الترابيزة"
+    ],
+    [
+     "The bank is next to the school.",
+     "البنك جنب المدرسة"
+    ],
+    [
+     "The lamp is between the bed and the desk.",
+     "اللمبة بين السرير والمكتب"
+    ]
+   ]
+  },
+  {
    "type": "note",
    "text": "بنقول in the morning لكن at night."
   }
@@ -282,6 +365,25 @@ CURRICULUM.push(
    ],
    "answer": 2,
    "explain": "مع السنين بنستخدم in."
+  },
+  {
+   "q": "كمّل: The cat is ___ the table. (تحت)",
+   "options": [
+    {
+     "text": "under"
+    },
+    {
+     "text": "on"
+    },
+    {
+     "text": "at"
+    },
+    {
+     "text": "in"
+    }
+   ],
+   "answer": 0,
+   "explain": "under معناها تحت."
   }
  ],
  "exercises": [
@@ -296,6 +398,12 @@ CURRICULUM.push(
    "hint": "استخدم in و on و at.",
    "code": "My phone is on the bed. My books are in the bag. My chair is at the desk.",
    "why": "كل جملة بتحدد مكان بحرف جر مناسب."
+  },
+  {
+   "task": "وصف مكان 3 حاجات في أوضتك بـ under و next to و between.",
+   "hint": "حروف جر مكان.",
+   "code": "The bag is under the desk. The lamp is next to the bed.",
+   "why": "حروف الجر بتوصف العلاقة بين الأشياء."
   }
  ]
 },
@@ -368,6 +476,43 @@ CURRICULUM.push(
    ]
   },
   {
+   "type": "h",
+   "text": "أفعال غير منتظمة شائعة"
+  },
+  {
+   "type": "table",
+   "head": [
+    "الفعل",
+    "الماضي"
+   ],
+   "rows": [
+    [
+     "buy",
+     "bought"
+    ],
+    [
+     "write",
+     "wrote"
+    ],
+    [
+     "come",
+     "came"
+    ],
+    [
+     "take",
+     "took"
+    ],
+    [
+     "drink",
+     "drank"
+    ]
+   ]
+  },
+  {
+   "type": "p",
+   "text": "كلمات الماضي: yesterday و last week و two days ago."
+  },
+  {
    "type": "note",
    "text": "بعد did الفعل بيرجع لأصله: Did you go؟ مش Did you went."
   }
@@ -429,6 +574,25 @@ CURRICULUM.push(
    ],
    "answer": 1,
    "explain": "y بعد ساكن بتتحول لـ ied."
+  },
+  {
+   "q": "الماضي لكلمة buy؟",
+   "options": [
+    {
+     "text": "bought"
+    },
+    {
+     "text": "buyed"
+    },
+    {
+     "text": "boughted"
+    },
+    {
+     "text": "buys"
+    }
+   ],
+   "answer": 0,
+   "explain": "buy فعل غير منتظم، ماضيه bought."
   }
  ],
  "exercises": [
@@ -443,6 +607,12 @@ CURRICULUM.push(
    "hint": "استخدم did.",
    "code": "She did not watch TV. / Did she watch TV?",
    "why": "الفعل بيرجع لأصله بعد did."
+  },
+  {
+   "task": "اكتب 3 جمل بـ last week و yesterday و two days ago.",
+   "hint": "استخدم ماضي.",
+   "code": "Yesterday I wrote an email. Last week I bought a book. Two days ago I came late.",
+   "why": "الكلمات دي بتحدد الوقت في الماضي."
   }
  ]
 },
@@ -494,6 +664,35 @@ CURRICULUM.push(
     [
      "I will call you later.",
      "هتصل بيك بعدين"
+    ]
+   ]
+  },
+  {
+   "type": "h",
+   "text": "أمثلة وكلمات المستقبل"
+  },
+  {
+   "type": "ex",
+   "items": [
+    [
+     "tomorrow",
+     "بكرة"
+    ],
+    [
+     "next week",
+     "الأسبوع الجاي"
+    ],
+    [
+     "I will be late.",
+     "هتأخر"
+    ],
+    [
+     "Will you help me?",
+     "هتساعدني؟"
+    ],
+    [
+     "I won't forget.",
+     "مش هنسى"
     ]
    ]
   },
@@ -559,6 +758,25 @@ CURRICULUM.push(
    ],
    "answer": 0,
    "explain": "النفي هو will not أو won't."
+  },
+  {
+   "q": "إيه الصح لإجابة سؤال Will you come؟",
+   "options": [
+    {
+     "text": "Yes, I will."
+    },
+    {
+     "text": "Yes, I do."
+    },
+    {
+     "text": "Yes, I am."
+    },
+    {
+     "text": "Yes, I did."
+    }
+   ],
+   "answer": 0,
+   "explain": "الإجابة القصيرة بتعيد will."
   }
  ],
  "exercises": [
@@ -573,6 +791,12 @@ CURRICULUM.push(
    "hint": "I will + فعل.",
    "code": "I will help you with your homework.",
    "why": "الوعد اللحظي بنقوله بـ will."
+  },
+  {
+   "task": "اكتب وعدين وخطتين.",
+   "hint": "will للوعد وgoing to للخطة.",
+   "code": "I will call you. I will help you. I am going to study. I am going to travel.",
+   "why": "التفريق بين الوعد والخطة."
   }
  ]
 },
@@ -638,6 +862,27 @@ CURRICULUM.push(
    ]
   },
   {
+   "type": "h",
+   "text": "أمثلة إضافية"
+  },
+  {
+   "type": "ex",
+   "items": [
+    [
+     "You must not smoke here.",
+     "ممنوع التدخين هنا"
+    ],
+    [
+     "May I sit here?",
+     "ممكن أقعد هنا؟ (مؤدب)"
+    ],
+    [
+     "Could you help me?",
+     "ممكن تساعدني؟ (مؤدب)"
+    ]
+   ]
+  },
+  {
    "type": "note",
    "text": "مفيش s مع he و she: She can swim."
   }
@@ -699,6 +944,25 @@ CURRICULUM.push(
    ],
    "answer": 1,
    "explain": "المودال بيتقدم في السؤال."
+  },
+  {
+   "q": "أنهي سؤال أكتر أدباً لطلب مساعدة؟",
+   "options": [
+    {
+     "text": "Could you help me?"
+    },
+    {
+     "text": "Help me."
+    },
+    {
+     "text": "You help me?"
+    },
+    {
+     "text": "Do help me now."
+    }
+   ],
+   "answer": 0,
+   "explain": "Could you أكتر أدباً من الأمر المباشر."
   }
  ],
  "exercises": [
@@ -713,6 +977,12 @@ CURRICULUM.push(
    "hint": "استخدم should.",
    "code": "You should sleep early. You should drink water.",
    "why": "should بتستخدم للنصيحة."
+  },
+  {
+   "task": "اكتب طلبين مؤدبين بـ could و may.",
+   "hint": "Could you / May I.",
+   "code": "Could you open the window? May I sit here?",
+   "why": "الأسئلة بتبدأ بالمودال."
   }
  ]
 },
@@ -794,6 +1064,48 @@ CURRICULUM.push(
    ]
   },
   {
+   "type": "h",
+   "text": "في المواصلات"
+  },
+  {
+   "type": "ex",
+   "items": [
+    [
+     "Excuse me, where is the station?",
+     "لو سمحت، المحطة فين؟"
+    ],
+    [
+     "Turn left. Turn right. Go straight.",
+     "لف شمال. لف يمين. امشي على طول"
+    ],
+    [
+     "Thank you for your help.",
+     "شكراً على مساعدتك"
+    ]
+   ]
+  },
+  {
+   "type": "h",
+   "text": "في التليفون"
+  },
+  {
+   "type": "ex",
+   "items": [
+    [
+     "Hello, this is Ahmed.",
+     "ألو، أنا أحمد"
+    ],
+    [
+     "Can I speak to Mr. Ali?",
+     "ممكن أكلم أستاذ علي؟"
+    ],
+    [
+     "Sorry, can you repeat that?",
+     "آسف، ممكن تعيد؟"
+    ]
+   ]
+  },
+  {
    "type": "note",
    "text": "would like أكتر أدباً من want: I would like a coffee بدل I want a coffee."
   }
@@ -855,6 +1167,25 @@ CURRICULUM.push(
    ],
    "answer": 1,
    "explain": "السؤال عن الشغل أو الدراسة."
+  },
+  {
+   "q": "أنهي جملة بتستخدمها لو مفهمتش؟",
+   "options": [
+    {
+     "text": "Sorry, can you repeat that?"
+    },
+    {
+     "text": "Go straight."
+    },
+    {
+     "text": "You are welcome."
+    },
+    {
+     "text": "Good night."
+    }
+   ],
+   "answer": 0,
+   "explain": "بنطلب الإعادة بـ can you repeat that."
   }
  ],
  "exercises": [
@@ -869,6 +1200,12 @@ CURRICULUM.push(
    "hint": "استخدم Where و What و Nice to meet you.",
    "code": "A: Hi, I am Omar. B: Nice to meet you. I am Sara. A: Where are you from? B: I am from Assiut.",
    "why": "التعارف بيبدأ بالاسم ثم المكان."
+  },
+  {
+   "task": "اكتب حوار قصير بتسأل فيه عن طريق.",
+   "hint": "Excuse me و Turn left.",
+   "code": "A: Excuse me, where is the station? B: Go straight and turn left. A: Thank you.",
+   "why": "السؤال عن الاتجاهات موقف مهم."
   }
  ]
 },
@@ -903,6 +1240,20 @@ CURRICULUM.push(
   {
    "type": "p",
    "text": "I am Omar. I am from Assiut. I study at university. I wake up at seven every day. Now I am learning English. Yesterday I went to the library. I am going to study English every day."
+  },
+  {
+   "type": "h",
+   "text": "قايمة مراجعة قبل ما تخلص"
+  },
+  {
+   "type": "list",
+   "items": [
+    "كل جملة فيها فاعل وفعل؟",
+    "استخدمت am/is/are صح؟",
+    "حطيت s مع he و she في المضارع البسيط؟",
+    "الماضي صح (went مش goed)؟",
+    "قريتها بصوت عالي؟"
+   ]
   },
   {
    "type": "note",
@@ -966,6 +1317,25 @@ CURRICULUM.push(
    ],
    "answer": 0,
    "explain": "am going to للخطط المقررة."
+  },
+  {
+   "q": "كمّل: She ___ English every day.",
+   "options": [
+    {
+     "text": "studies"
+    },
+    {
+     "text": "study"
+    },
+    {
+     "text": "studying"
+    },
+    {
+     "text": "is study"
+    }
+   ],
+   "answer": 0,
+   "explain": "مع she بنزود es وبنحوّل y لـ ies."
   }
  ],
  "exercises": [
@@ -980,6 +1350,12 @@ CURRICULUM.push(
    "hint": "ركز على am و is و are وعلى s مع he و she.",
    "code": "راجع كل جملة: الفاعل والفعل بيتطابقوا؟",
    "why": "القراءة بصوت عالي بتكشف أخطاء كتيرة."
+  },
+  {
+   "task": "اكتب فقرة تانية عن عيلتك (5 جمل).",
+   "hint": "استخدم to be والمضارع البسيط.",
+   "code": "I have a small family. My father is a teacher. My mother works at a bank. I have one sister. We live in Assiut.",
+   "why": "أي موضوع تعرفه كويس بيسهل الكتابة."
   }
  ]
 }
