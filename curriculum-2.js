@@ -4,6 +4,8 @@ window.CURRICULUM = CURRICULUM;
 CURRICULUM.push(
 {
  "id": "wh",
+ "level": "A2",
+ "skill": "core",
  "nav": "أسئلة Wh",
  "title": "أسئلة Wh: who و what و where و when",
  "subtitle": "تسأل عن أي معلومة",
@@ -306,6 +308,8 @@ CURRICULUM.push(
 },
 {
  "id": "prepositions",
+ "level": "A2",
+ "skill": "core",
  "nav": "حروف الجر",
  "title": "حروف الجر: in و on و at",
  "subtitle": "تحدد المكان والزمان بدقة",
@@ -593,6 +597,8 @@ CURRICULUM.push(
 },
 {
  "id": "past_simple",
+ "level": "A2",
+ "skill": "core",
  "nav": "الماضي البسيط",
  "title": "الماضي البسيط",
  "subtitle": "تحكي اللي حصل إمبارح",
@@ -883,6 +889,8 @@ CURRICULUM.push(
 },
 {
  "id": "future",
+ "level": "A2",
+ "skill": "core",
  "nav": "المستقبل",
  "title": "المستقبل: will و going to",
  "subtitle": "تتكلم عن خططك وتوقعاتك",
@@ -1170,6 +1178,8 @@ CURRICULUM.push(
 },
 {
  "id": "modals",
+ "level": "A2",
+ "skill": "core",
  "nav": "can و must و should",
  "title": "الأفعال المساعدة: can و must و should",
  "subtitle": "تتكلم عن القدرة والواجب والنصيحة",
@@ -1459,6 +1469,8 @@ CURRICULUM.push(
 },
 {
  "id": "conversations",
+ "level": "A2",
+ "skill": "core",
  "nav": "محادثات يومية",
  "title": "محادثات يومية: السوق والمطعم والتعارف",
  "subtitle": "تتكلم في مواقف حقيقية",
@@ -1784,6 +1796,8 @@ CURRICULUM.push(
 },
 {
  "id": "capstone",
+ "level": "A2",
+ "skill": "core",
  "nav": "المشروع الختامي",
  "title": "المشروع الختامي: قدّم نفسك بالإنجليزي",
  "subtitle": "تجمع كل حاجة في فقرة واحدة",
