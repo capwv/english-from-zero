@@ -145,7 +145,7 @@ CURRICULUM.push(
   { "q": "الختام الصح للعرض:", "options": [{ "text": "That's it, bye." }, { "text": "To conclude + الفكرة الأساسية + شكر + فتح باب الأسئلة" }, { "text": "تكرار العرض من الأول بسرعة" }, { "text": "الصمت" }], "answer": 1, "explain": "الختام يلخص ويشكر ويفتح باب للأسئلة." }
  ],
  "exercises": [
-  { "task": "جهز وسجّل عرض ٣ دقايق عن موضوع تعرفه كويس (هوايتك، تخصصك، نصيحة عندك). استخدم خريطة العرض كاملة.", "hint": "اكتب النقاط التلاتة على ورقة صغيرة بس، والكلام الحر يجي منك.", "code": "Good morning, everyone. Today, I would like to talk about learning English with podcasts. I will divide my talk into three points: why podcasts work, how to choose one, and how to practice daily. Let me start with ... Moving on to ... A good example is ... To conclude, fifteen minutes a day can change your English. Thank you for listening. Are there any questions?", "why": "العرض الكامل المسجل هو شهادتك الحقيقية على مستوى B2 في الكلام." }
+  { "task": "جهز وسجّل عرض ٣ دقايق عن موضوع تعرفه كويس (هوايتك، تخصصك، نصيحة عندك). استخدم خريطة العرض كاملة.", "hint": "اكتب النقاط التلاتة على ورقة صغيرة بس، والكلام الحر يجي منك.", "code": "Good morning, everyone. Today, I would like to talk about learning English with podcasts. I will divide my talk into three points: why podcasts work, how to choose one, and how to practice daily. Let me start with ... Moving on to ... A good example is ... To conclude, fifteen minutes a day can change your English. Thank you for listening. Are there any questions?", "why": "العرض الكامل المسجل هو أقوى تمرين عملي على مهارات الكلام في المستوى ده: اسمع نفسك، قارن بالنموذج، وحاول تاني." }
  ]
 }
 );
