@@ -187,7 +187,19 @@
   function buildNav() {
     var nav = document.getElementById('nav');
     nav.innerHTML = '';
+    if (currentLevel) {
+      var back = document.createElement('button');
+      back.type = 'button';
+      back.className = 'nav-back';
+      back.textContent = '← كل المستويات';
+      back.addEventListener('click', function () {
+        document.getElementById('sidebar').classList.remove('open');
+        exitLevel(); showHome();
+      });
+      nav.appendChild(back);
+    }
     LEVELS.forEach(function (lv) {
+      if (currentLevel && lv.id !== currentLevel) return;
       var ls = lessonsOfLevel(lv.id);
       if (!ls.length) return;
       var head = document.createElement('div');
@@ -195,20 +207,34 @@
       head.innerHTML = '<div class="lvl-head-row"><b>' + lv.id + '</b><span>' + esc(lv.name) + '</span><span class="lvl-pct" id="lvlpct-' + lv.id + '">0%</span></div>' +
         '<div class="lvl-bar"><i id="lvlbar-' + lv.id + '"></i></div>';
       nav.appendChild(head);
-      ls.forEach(function (l) {
+      function addItem(l, locked) {
         var sk = SKILL_META[skillOf(l)] || SKILL_META.core;
         var item = document.createElement('button');
         item.type = 'button';
-        item.className = 'nav-item';
+        item.className = 'nav-item' + (locked ? ' locked' : '');
         item.dataset.id = l.id;
         item.innerHTML = '<span class="check">' + (progress.done[l.id] ? '✓' : '') + '</span>' +
-          '<span class="num" title="' + esc(sk.name) + '">' + sk.icon + '</span><span>' + esc(l.nav) + '</span>';
+          '<span class="num" title="' + esc(sk.name) + '">' + (locked ? '🔒' : sk.icon) + '</span><span>' + esc(l.nav) + '</span>';
         item.addEventListener('click', function () {
+          if (locked) { alert('الدرس ده مقفول لحد ما تخلّص القسم اللي قبله 🔒'); return; }
           openLesson(l.id);
           document.getElementById('sidebar').classList.remove('open');
         });
         nav.appendChild(item);
-      });
+      }
+      if (currentLevel) {
+        sectionsOfLevel(lv.id).forEach(function (sec) {
+          var meta = SKILL_META[sec.skill] || SKILL_META.core;
+          var unlocked = sectionUnlocked(lv.id, sec.skill);
+          var sub = document.createElement('div');
+          sub.className = 'sec-sub';
+          sub.textContent = meta.icon + ' ' + meta.name + (unlocked ? '' : ' 🔒');
+          nav.appendChild(sub);
+          sec.lessons.forEach(function (l) { addItem(l, !unlocked); });
+        });
+      } else {
+        ls.forEach(function (l) { addItem(l, lessonLocked(l)); });
+      }
     });
   }
 
@@ -241,7 +267,7 @@
         '<div class="lvl-card-actions"><button type="button" class="lvl-go cta-mini">' + (p.done === 0 ? 'ابدأ المستوى' : 'كمل') + '</button>' +
         '<button type="button" class="lvl-cert-btn" data-level="' + lv.id + '" hidden>🎓 شهادة المستوى</button></div>';
       card.querySelector('.lvl-go').addEventListener('click', function () {
-        openLesson(firstUndone(ls).id);
+        enterLevel(lv.id);
       });
       card.querySelector('.lvl-cert-btn').addEventListener('click', function () {
         if (window.IUA_LEVEL_CERT) window.IUA_LEVEL_CERT.open(lv.id);
@@ -361,11 +387,37 @@
   }
 
   var currentLesson = null;
+  var currentLevel = null;
+  var SECTION_ORDER = ['core', 'listening', 'reading', 'writing', 'speaking'];
+
+  function sectionsOfLevel(lvid) {
+    var ls = lessonsOfLevel(lvid);
+    var out = [];
+    SECTION_ORDER.forEach(function (sk) {
+      var sls = ls.filter(function (l) { return skillOf(l) === sk; });
+      if (sls.length) out.push({ skill: sk, lessons: sls });
+    });
+    return out;
+  }
+  function sectionUnlocked(lvid, skill) {
+    var secs = sectionsOfLevel(lvid);
+    for (var i = 0; i < secs.length; i++) {
+      if (secs[i].skill === skill) return true;
+      var allDone = secs[i].lessons.every(function (l) { return progress.done[l.id]; });
+      if (!allDone) return false;
+    }
+    return true;
+  }
+  function lessonLocked(l) {
+    if (!currentLevel) return !sectionUnlocked(levelOf(l), skillOf(l));
+    return !sectionUnlocked(currentLevel, skillOf(l));
+  }
 
   function openLesson(id) {
     var lesson = null, idx = -1;
     CURRICULUM.forEach(function (l, i) { if (l.id === id) { lesson = l; idx = i; } });
     if (!lesson) return;
+    if (lessonLocked(lesson)) { alert('الدرس ده مقفول لحد ما تخلّص القسم اللي قبله 🔒'); return; }
     stopSpeak();
     currentLesson = lesson;
     document.getElementById('lab').hidden = true;
@@ -390,9 +442,17 @@
       html += '<div class="exercise-box"><h3>✍️ تمارين عملية</h3><div id="exs"></div></div>';
     }
     html += '<div class="complete-badge" id="complete-badge">🎉 مبروك! خلصت الدرس ده. كمل اللي بعده 👇</div>';
+    var seq = currentLevel ? lessonsOfLevel(currentLevel) : CURRICULUM;
+    var sidx = -1; seq.forEach(function (l, i) { if (l.id === id) sidx = i; });
+    if (sidx < 0) { seq = CURRICULUM; sidx = idx; }
+    var atEnd = sidx === seq.length - 1;
     html += '<div class="lesson-nav">';
-    html += '<button id="prev-btn"' + (idx === 0 ? ' disabled' : '') + '>→ الدرس اللي فات</button>';
-    html += '<button id="next-btn" class="next-btn"' + (idx === CURRICULUM.length - 1 ? ' disabled' : '') + '>الدرس اللي بعده ←</button>';
+    html += '<button id="prev-btn"' + (sidx === 0 ? ' disabled' : '') + '>→ الدرس اللي فات</button>';
+    if (atEnd && currentLevel) {
+      html += '<button id="next-btn" class="next-btn">خلصت المستوى 🎓</button>';
+    } else {
+      html += '<button id="next-btn" class="next-btn"' + (atEnd ? ' disabled' : '') + '>الدرس اللي بعده ←</button>';
+    }
     html += '</div></div>';
 
     host.innerHTML = html;
@@ -406,10 +466,11 @@
     }
 
     document.getElementById('prev-btn').addEventListener('click', function () {
-      if (idx > 0) openLesson(CURRICULUM[idx - 1].id);
+      if (sidx > 0) openLesson(seq[sidx - 1].id);
     });
     document.getElementById('next-btn').addEventListener('click', function () {
-      if (idx < CURRICULUM.length - 1) openLesson(CURRICULUM[idx + 1].id);
+      if (atEnd && currentLevel) { showHome(); return; }
+      if (!atEnd) openLesson(seq[sidx + 1].id);
     });
 
     document.querySelectorAll('.nav-item').forEach(function (n) {
@@ -522,9 +583,8 @@
       progress = { answers: {}, done: {} };
       saveProgress();
       buildNav();
-      renderLevels();
+      showHome();
       refreshProgressUI();
-      if (currentLesson) openLesson(currentLesson.id);
     }
   });
 
@@ -533,7 +593,7 @@
   });
 
   document.getElementById('lab-link').onclick = () => { stopSpeak(); document.getElementById('hero').style.display = 'none'; document.getElementById('lesson').style.display = 'none'; document.getElementById('lab').hidden = false; document.getElementById('sidebar').classList.remove('open'); if (window.LAB_FOCUS) window.LAB_FOCUS(); };
-  document.getElementById('home-link').onclick = () => { stopSpeak(); document.getElementById('lab').hidden = true; document.getElementById('lesson').style.display = 'none'; document.getElementById('hero').style.display = 'block'; renderLevels(); refreshProgressUI(); };
+  document.getElementById('home-link').onclick = () => { stopSpeak(); showHome(); };
   document.getElementById('start-btn').onclick = () => { openLesson(firstUndone(CURRICULUM).id); };
 
   /* ---------- hero stats (computed, never hardcoded) ---------- */
@@ -554,8 +614,118 @@
     done: doneCount
   };
 
+  /* ---------- level view (one level at a time, skills in order) ---------- */
+  function showHome() {
+    document.getElementById('lab').hidden = true;
+    document.getElementById('lesson').style.display = 'none';
+    document.getElementById('hero').style.display = 'block';
+    if (currentLevel) renderLevelView(); else { renderLevels(); }
+    refreshProgressUI();
+  }
+
+  function enterLevel(lvid) {
+    var lv = LEVELS.filter(function (x) { return x.id === lvid; })[0];
+    if (!lv || !lessonsOfLevel(lvid).length) return;
+    currentLevel = lvid;
+    try { history.replaceState(null, '', '#lvl=' + lvid); } catch (e) {}
+    buildNav();
+    if (document.getElementById('hero').style.display !== 'none' || true) showHome();
+  }
+
+  function exitLevel() {
+    currentLevel = null;
+    try { history.replaceState(null, '', location.pathname); } catch (e) {}
+    buildNav();
+  }
+
+  function renderLevelView() {
+    var grid = document.getElementById('levels-grid');
+    var view = document.getElementById('level-view');
+    var hint = document.querySelector('.hero-hint');
+    var startBtn = document.getElementById('start-btn');
+    if (!view) return;
+    grid.style.display = 'none';
+    view.hidden = false;
+    if (hint) hint.style.display = 'none';
+    if (startBtn) startBtn.style.display = 'none';
+    var lv = LEVELS.filter(function (x) { return x.id === currentLevel; })[0];
+    if (!lv) return;
+    var p = levelProgress(lv.id);
+    document.getElementById('lv-id').textContent = lv.id;
+    document.getElementById('lv-name').textContent = lv.name;
+    document.getElementById('lv-desc').textContent = lv.desc;
+    document.getElementById('lv-pct').textContent = p.pct + '%';
+    document.getElementById('lv-bar').style.width = p.pct + '%';
+    var complete = p.total > 0 && p.done === p.total;
+    var cont = document.getElementById('lv-continue');
+    cont.textContent = complete ? 'راجع المستوى من الأول' : (p.done === 0 ? 'ابدأ المستوى' : 'كمل من حيث وقفت');
+    cont.onclick = function () {
+      var ls = lessonsOfLevel(lv.id);
+      var target = complete ? ls[0] : firstUndone(ls);
+      openLesson(target.id);
+    };
+    var cert = document.getElementById('lv-cert');
+    if (complete) {
+      cert.disabled = false;
+      cert.classList.add('ready');
+      cert.textContent = '🎓 شهادة المستوى جاهزة — اضغط هنا';
+      cert.onclick = function () { if (window.IUA_LEVEL_CERT) window.IUA_LEVEL_CERT.open(lv.id); };
+    } else {
+      cert.disabled = true;
+      cert.classList.remove('ready');
+      cert.textContent = '🔒 شهادة المستوى: خلّص كل الدروس الأول (' + p.done + '/' + p.total + ')';
+      cert.onclick = null;
+    }
+    var host = document.getElementById('lv-lessons');
+    host.innerHTML = '';
+    var secs = sectionsOfLevel(lv.id);
+    var currentSecFound = false;
+    secs.forEach(function (sec) {
+      var meta = SKILL_META[sec.skill] || SKILL_META.core;
+      var done = sec.lessons.filter(function (l) { return progress.done[l.id]; }).length;
+      var unlocked = sectionUnlocked(lv.id, sec.skill);
+      var row = document.createElement('button');
+      row.type = 'button';
+      var isDone = done === sec.lessons.length;
+      var state = isDone ? 'done' : (unlocked ? (currentSecFound ? 'open' : 'current') : 'locked');
+      if (state === 'current') currentSecFound = true;
+      row.className = 'lv-sec ' + state;
+      var stateTxt = isDone ? '✓' : (unlocked ? done + '/' + sec.lessons.length : '🔒');
+      var sub = isDone ? 'خلصان' : (unlocked ? (done ? 'شغال دلوقتي' : 'ابدأ من هنا') : 'خلّص اللي قبلها الأول');
+      row.innerHTML = '<span class="s-icon">' + meta.icon + '</span>' +
+        '<span><span class="s-name">' + esc(meta.name) + '</span><br><span class="s-sub">' + sub + '</span></span>' +
+        '<span class="s-state">' + stateTxt + '</span>';
+      row.addEventListener('click', function () {
+        if (!unlocked) { alert('القسم ده مقفول لحد ما تخلّص اللي قبله 🔒'); return; }
+        openLesson(firstUndone(sec.lessons).id);
+      });
+      host.appendChild(row);
+    });
+  }
+
+  function renderLevelsWrapper() {
+    var grid = document.getElementById('levels-grid');
+    var view = document.getElementById('level-view');
+    var hint = document.querySelector('.hero-hint');
+    var startBtn = document.getElementById('start-btn');
+    if (view) view.hidden = true;
+    if (grid) grid.style.display = '';
+    if (hint) hint.style.display = '';
+    if (startBtn) startBtn.style.display = '';
+    _renderLevels();
+  }
+
+  var _renderLevels = renderLevels;
+  renderLevels = renderLevelsWrapper;
+
+  document.getElementById('level-back').addEventListener('click', function () { exitLevel(); showHome(); });
+
   /* ---------- boot ---------- */
   buildNav();
   renderLevels();
   refreshProgressUI();
+  (function () {
+    var m = (location.hash || '').match(/^#lvl=(A1|A2|B1|B2|C1|C2)$/);
+    if (m) enterLevel(m[1]);
+  })();
 })();
