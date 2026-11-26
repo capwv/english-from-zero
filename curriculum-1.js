@@ -4,6 +4,8 @@ window.CURRICULUM = CURRICULUM;
 CURRICULUM.push(
 {
  "id": "alphabet",
+ "level": "A1",
+ "skill": "core",
  "nav": "الحروف والنطق",
  "title": "الحروف الإنجليزية والنطق الصح",
  "subtitle": "نبدأ بالحروف والأصوات اللي بتفرق عن العربي",
@@ -321,6 +323,8 @@ CURRICULUM.push(
 },
 {
  "id": "greetings",
+ "level": "A1",
+ "skill": "core",
  "nav": "التحيات و to be",
  "title": "التحيات والتعريف بنفسك مع to be",
  "subtitle": "تسلّم، تقول اسمك، وتعرف am و is و are",
@@ -646,6 +650,8 @@ CURRICULUM.push(
 },
 {
  "id": "tobe2",
+ "level": "A1",
+ "skill": "core",
  "nav": "النفي والسؤال",
  "title": "to be في النفي والسؤال",
  "subtitle": "تقول لأ، وتسأل سؤال إجابته yes أو no",
@@ -929,6 +935,8 @@ CURRICULUM.push(
 },
 {
  "id": "articles",
+ "level": "A1",
+ "skill": "core",
  "nav": "a و an و the والجمع",
  "title": "a و an و the والجمع",
  "subtitle": "إمتى تقول a وإمتى an وإمتى the, وإزاي تجمع الأسماء",
@@ -1217,6 +1225,8 @@ CURRICULUM.push(
 },
 {
  "id": "numbers",
+ "level": "A1",
+ "skill": "core",
  "nav": "الأرقام والتاريخ والوقت",
  "title": "الأرقام والأيام والساعة",
  "subtitle": "تعد، وتقول الساعة، وتحدد ميعاد",
@@ -1524,6 +1534,8 @@ CURRICULUM.push(
 },
 {
  "id": "present_simple",
+ "level": "A1",
+ "skill": "core",
  "nav": "المضارع البسيط",
  "title": "المضارع البسيط: العادات والحقائق",
  "subtitle": "تتكلم عن روتينك وعن اللي بيحصل دايماً",
@@ -1822,6 +1834,8 @@ CURRICULUM.push(
 },
 {
  "id": "present_cont",
+ "level": "A1",
+ "skill": "core",
  "nav": "المضارع المستمر",
  "title": "المضارع المستمر: اللي بيحصل دلوقتي",
  "subtitle": "تقول إنت بتعمل إيه في اللحظة دي",
